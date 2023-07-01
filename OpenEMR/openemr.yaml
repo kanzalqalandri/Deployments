@@ -1,0 +1,25 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: openerm-pod
+  labels:
+    kanzal: kanzal
+spec:
+  containers:
+  - name: operm-container
+    image: openemr/openemr:6.0.0
+    ports:
+    - containerPort: 80
+    env:
+    - name: MYSQL_HOST
+      value: mysql
+    - name: MYSQL_ROOT_PASS
+      value: root
+    - name:  MYSQL_USER
+      value: openemr
+    - name: MYSQL_PASS
+      value: openemr
+    - name: OE_USER
+      value: admin
+    - name:  OE_PASS
+      value: pass

@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: maria-deployment
+  labels:
+    humza: humza
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      humza: humza
+  template:
+    metadata:
+      name: maria-pod
+      labels:
+        humza: humza
+    spec:
+      containers:
+      - name: maria-container
+        image: mariadb:latest
+        ports:
+        - containerPort: 3306
+        env:
+        - name: MARIADB_DATABASE
+          value: bitnami_orangehrm
+        - name: MARIADB_USER
+          value: bn_orangehrm
+        - name: MARIADB_PASSWORD
+          value: bitnami
+        - name: MARIADB_ROOT_PASSWORD
+          value: kanzalpass
