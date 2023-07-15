@@ -3,7 +3,7 @@ resources:
 - configmap.yaml
 - wp-secret.yaml
 - db-secret.yaml
-- mysql.yaml
-- wp.yaml
+- mysql-depl.yaml
+- wp-depl.yaml
 - db-svc.yaml
 - wp-svc.yaml
