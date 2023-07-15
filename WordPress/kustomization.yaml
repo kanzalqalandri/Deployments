@@ -1,5 +1,8 @@
 resources:
 - namespace.yaml
+- storageclass.yaml
+- db-pvc.yaml
+- wp-pvc.yaml
 - configmap.yaml
 - wp-secret.yaml
 - db-secret.yaml

@@ -15,9 +15,16 @@ spec:
       labels:
         app: wordpress
     spec:
+      volumes:
+      - name: wp-vol
+        persistentVolumeClaim:
+          claimName: wp-pvc
       containers:
       - name: wp-cotr
         image: wordpress
+        volumeMounts:
+        - name: wp-vol
+          mountPath: /var/www/html
         ports:
         - containerPort: 80
         envFrom:
