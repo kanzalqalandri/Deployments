@@ -1,7 +1,7 @@
 kind: Service
 apiVersion: v1
 metadata:
-#  namespace: wp
+  namespace: wp
   name: mysql-svc
 spec:
   selector:

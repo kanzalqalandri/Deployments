@@ -1,4 +1,5 @@
 resources:
+- namespace.yaml
 - configmap.yaml
 - wp-secret.yaml
 - db-secret.yaml
