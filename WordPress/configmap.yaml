@@ -4,4 +4,4 @@ metadata:
   name: wp-configmap
   namespace: wp
 data:
-  WORDPRESS_DB_HOST: mysql-svc
+  WORDPRESS_DB_HOST: mysql-headless

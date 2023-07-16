@@ -4,7 +4,7 @@ metadata:
   name: nfs-sc
 provisioner: nfs.csi.k8s.io
 parameters:
-  server: 159.223.83.159  # NFS Server IP
+  server: 206.189.153.171
   share: /srv/nfs
 reclaimPolicy: Delete
 allowVolumeExpansion: true

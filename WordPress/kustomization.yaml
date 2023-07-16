@@ -1,12 +1,11 @@
 resources:
 - namespace.yaml
 - storageclass.yaml
-- db-pvc.yaml
 - wp-pvc.yaml
 - configmap.yaml
 - wp-secret.yaml
 - db-secret.yaml
-- mysql-depl.yaml
+- mysql-sts.yaml
 - wp-depl.yaml
-- db-svc.yaml
+- mysql-h-svc.yaml
 - wp-svc.yaml
