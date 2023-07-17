@@ -19,7 +19,7 @@ mountOptions:
       # 1) Immediate  2) WaitForFirstConsumer
 
 # reclaimPolicy
-      # 1) Retain     2) Delete                    3) Recycle(deprecated)
+      # 1) Retain     2) Delete    3) Recycle(deprecated)
 
 # allowVolumeExpansion
       # 1) true       2) false

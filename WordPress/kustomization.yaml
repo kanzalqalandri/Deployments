@@ -1,0 +1,9 @@
+resources:
+- configmap.yaml
+- mysql-h-svc.yaml
+- mysql-secret.yaml
+- mysql-sts.yaml
+- wp-depl.yaml
+- wp-pvc.yaml
+- wp-secret.yaml
+- wp-svc.yaml
