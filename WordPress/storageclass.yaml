@@ -7,8 +7,24 @@ parameters:
   server: 206.189.153.171
   share: /srv/nfs
 reclaimPolicy: Delete
-allowVolumeExpansion: true
 volumeBindingMode: Immediate
+allowVolumeExpansion: true
 mountOptions:
   - hard
   - nfsvers=4.1
+
+
+
+# volumeBindingMode
+      # 1) Immediate  2) WaitForFirstConsumer
+
+# reclaimPolicy
+      # 1) Retain     2) Delete                    3) Recycle(deprecated)
+
+# allowVolumeExpansion
+      # 1) true       2) false
+
+# Storage Class
+#    mountOptions
+#    parameters
+#    provisioner

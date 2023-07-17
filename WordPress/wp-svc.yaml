@@ -2,7 +2,6 @@ apiVersion: v1
 kind: Service
 metadata:
   name: wp-svc
-  namespace: wp
 spec:
   type: NodePort
   selector:

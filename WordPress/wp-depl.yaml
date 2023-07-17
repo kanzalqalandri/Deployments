@@ -4,7 +4,6 @@ metadata:
   name: wp-deployment
   labels:
     app: wordpress
-  namespace: wp
 spec:
   replicas: 3
   selector:
